@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="ThemeBucket">
+
+  <title>Horizontal menu page</title>
+
+  <!--Core CSS -->
+  <link href="bs3/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-reset.css" rel="stylesheet">
+  <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/styleuse.css" rel="stylesheet">
+  <link href="css/style-responsive.css" rel="stylesheet" />
+
+</head>
+
+<body class="full-width">
+
+  <section id="container" class="hr-menu">
+    <!--header start-->
+    <header class="header fixed-top">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle hr-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="fa fa-bars"></span>
+        </button>
+
+        <!--logo start-->
+        <!--logo start-->
+        <div class="brand">
+          <a href="index_kh.html" class="logo">
+            <img src="images/GumShop.png" style="width: 168px; height: 32px;" alt="">
+          </a>
+        </div>
+        <!--logo end-->
+        <!--logo end-->
+        <div class="horizontal-menu navbar-collapse collapse ">
+          <ul class="nav navbar-nav">
+            <li><a href="index_kh.html" class="btnspmenu"><span class="fa fa-tasks"></span>&nbsp;Sản phẩm</a></li>
+            
+            <li><a href="#"><span class=" fa fa-phone-square"></span>&nbsp;Liên hệ</a></li>
+            <li><a href="#" class="btngiohang"><span class="fa fa-shopping-cart"></span>&nbsp;Giỏ hàng</a></li>
+          </ul>
+        </div>
+        <div class="top-nav hr-top-nav">
+          <ul class="nav pull-right top-menu">
+            <li>
+              <input type="text" class="form-control search" placeholder=" Search">
+            </li>
+            <!-- user login dropdown start-->
+            <li class="dropdown">
+              <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                <img alt="" class="myimg" src="">
+                <span class="myname">Đăng nhập|Đăng ký</span>
+                <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu extended dieuhuong">
+                <li><a href="login.html">Đăng nhập</a></li>
+                <li><a href="registration.html">Đăng ký</a></li>
+              </ul>
+            </li>
+            <!-- user login dropdown end -->
+          </ul>
+        </div>
+
+      </div>
+
+    </header>
+    <!--header end-->
+    <!--sidebar start-->
+
+    <!--sidebar end-->
+    <!--main content start-->
+    <section id="main-content">
+      <section class="wrapper">
+        <!-- page start-->
+        <div class="row">
+          <div class="col-lg-12">
+            <!--breadcrumbs start -->
+            <ul class="breadcrumbs-alt" style="background-color: white;">
+              <li><a href="#"><span class="fa fa-tasks"></span>&nbsp;Giỏ hàng</a></li>
+            </ul>
+            <!--breadcrumbs end -->
+          </div>
+        </div>
+
+        <div class="row frmgiohang">
+          <div class="col-sm-9">
+            <form name="cart_form" id="cart_form" method="post">
+              <table class="table vitamin-table">
+                <thead>
+                  <tr class="truong0 ">
+                    <th class="product-info1">Sản phẩm</th>
+                    <th class="product-price1">Giá</th>
+                    <th class="product-qty1">Số lượng</th>
+                    <th class="product-total1">Tổng tiền</th>
+                  </tr>
+                </thead>
+                <tbody class="ttgiohang">
+                  
+
+                </tbody>
+              </table>
+            </form>
+          </div>
+
+          <div class="col-sm-3 hihi truong9">
+            <div class="cart-totals">
+              <p class="clearfix sale">
+                <h7>Giảm giá</h7>
+                <span class="price1" id="total-discount">0đ</span>
+              </p>
+              <p class="clearfix sale" style="border: 0px;">
+                <h7>Thành tiền</h7>
+                <span class="price1" id="total-money">0đ</span>
+              </p>
+            </div>
+
+            <div class="checkout-process1">
+              <a class="checkout-process-button1 btn_xacnhansl" style="background-color: #79a32e;" href="#">Xác nhận số lượng</a>
+            </div><br>
+            <div class="checkout-process1">
+              <a class="checkout-process-button1 btn_thanhtoan" href="#" onclick="">Tiến hành thanh toán</a>
+            </div>
+          </div>
+        </div>
+        <!-- page end-->
+      </section>
+    </section>
+    <!--main content end-->
+
+    <!--footer start-->
+    <footer class="footer-section">
+      <div class="text-center">
+        2022 web bán hàng by LTX
+        <a href="#" class="go-top">
+          <i class="fa fa-angle-up"></i>
+        </a>
+      </div>
+    </footer>
+    <!--footer end-->
+  </section>
+
+  <!-- Placed js at the end of the document so the pages load faster -->
+  <!--Core js-->
+  <script src="js/jquery.js"></script>
+  <script src="bs3/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/hover-dropdown.js"></script>
+  <script src="js/jQuery-slimScroll-1.3.0/jquery.slimscroll.js"></script>
+  <script src="js/jquery.nicescroll.js"></script>
+
+  <!--Easy Pie Chart-->
+  <script src="js/easypiechart/jquery.easypiechart.js"></script>
+  <!--Sparkline Chart-->
+  <script src="js/sparkline/jquery.sparkline.js"></script>
+
+  <!--common script init for all pages-->
+  <script src="js/scripts.js"></script>
+ 
+  <!--js in js1-->
+  <script type="text/javascript" src="js1/Frm_giohang.js"></script>
+  <script type="text/javascript" src="js1/main.js"></script>
+  <script type="text/javascript" src="js/bootbox.min.js"></script>
+  <script type="text/javascript" src="js1/KH_frm_sanpham.js"></script>
+
+
+</body>
+
+</html>

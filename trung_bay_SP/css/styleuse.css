@@ -1,0 +1,411 @@
+.card {
+    border: 1px solid #ddd;
+    padding-bottom: 6px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+  }
+
+  .card-img-top {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+  }
+
+  .asd {
+    padding: 12px;
+  }
+
+  .hi {
+    margin: 0 4px;
+  }
+
+  .giasp {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "Quicksand", Arial, sans-serif;
+    text-align: center;
+    font-size: 17px;
+    line-height: 20px;
+    box-sizing: border-box;
+    color: #79a32e;
+    font-weight: bold;
+  }
+
+  .vitamin-table {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "Quicksand", Arial, sans-serif;
+    line-height: 1.428571429;
+    color: #111;
+    font-size: 15px;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    border: 1px solid #ccc !important;
+    overflow: hidden;
+  }
+
+  .hkl {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "Quicksand", Arial, sans-serif;
+    line-height: 1.428571429;
+    color: #111;
+    font-size: 15px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    box-sizing: border-box;
+  }
+
+  .product-info1 {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "Quicksand", Arial, sans-serif;
+    border-collapse: collapse;
+    border-spacing: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    vertical-align: middle !important;
+    padding: 12px 30px !important;
+    border: 1px solid #ccc !important;
+    text-align: center;
+    color: #fff;
+    background-color: #79a32e;
+    line-height: 1.428571429;
+  }
+
+  .product-qty2 {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "Quicksand", Arial, sans-serif;
+    color: #111;
+    border-collapse: collapse;
+    border-spacing: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    vertical-align: middle !important;
+    padding: 12px 30px !important;
+    border: 1px solid #ccc !important;
+    line-height: 1.428571429;
+    width: 17%;
+  }
+
+  .product-price2 {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "Quicksand", Arial, sans-serif;
+    color: #111;
+    border-collapse: collapse;
+    border-spacing: 0;
+    box-sizing: border-box;
+    vertical-align: middle !important;
+    padding: 12px 30px !important;
+    border: 1px solid #ccc !important;
+    line-height: 1.428571429;
+    width: 17%;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .imgsp {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "Quicksand", Arial, sans-serif;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 16px;
+    line-height: 1.428571429;
+    color: #337ab7;
+    box-sizing: border-box;
+    vertical-align: middle;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+  }
+
+  .clearfix {
+    
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "Quicksand", Arial, sans-serif;
+    color: #111;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 20px;
+    border-bottom: 1px solid #215439;
+    line-height: 1.428571429;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .pull-left {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "Quicksand", Arial, sans-serif;
+    color: #111;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 16px;
+    line-height: 1.428571429;
+    box-sizing: border-box;
+    float: left !important;
+    width: 32%;
+  }
+
+  .pull-right1 {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "Quicksand", Arial, sans-serif;
+    color: #111;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 16px;
+    line-height: 1.428571429;
+    box-sizing: border-box;
+    float: right !important;
+    width: 64%;
+  }
+
+  .product-delete {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "Quicksand", Arial, sans-serif;
+    border-collapse: collapse;
+    border-spacing: 0;
+    line-height: 1.428571429;
+    box-sizing: border-box;
+    background-color: transparent;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-size: 13px;
+    display: inline-block;
+    color: #c6231e;
+    text-decoration: none;
+    font-weight: normal;
+  }
+
+  .product-price1 {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "Quicksand", Arial, sans-serif;
+    border-collapse: collapse;
+    border-spacing: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    vertical-align: middle !important;
+    padding: 12px 30px !important;
+    border: 1px solid #ccc !important;
+    text-align: center;
+    color: #fff;
+    background-color: #79a32e;
+    line-height: 1.428571429;
+    width: 17%;
+  }
+
+  .product-qty1 {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "Quicksand", Arial, sans-serif;
+    border-collapse: collapse;
+    border-spacing: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    vertical-align: middle !important;
+    padding: 12px 30px !important;
+    border: 1px solid #ccc !important;
+    text-align: center;
+    color: #fff;
+    background-color: #79a32e;
+    line-height: 1.428571429;
+    width: 17%;
+  }
+
+  .product-total1 {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "Quicksand", Arial, sans-serif;
+    border-collapse: collapse;
+    border-spacing: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    vertical-align: middle !important;
+    padding: 12px 30px !important;
+    border: 1px solid #ccc !important;
+    text-align: center;
+    color: #fff;
+    background-color: #79a32e;
+    line-height: 1.428571429;
+    width: 17%;
+  }
+
+  .number-box {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "Quicksand", Arial, sans-serif;
+    color: #111;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 16px;
+    line-height: 1.428571429;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .qty {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    border-collapse: collapse;
+    border-spacing: 0;
+    box-sizing: border-box;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    padding: 8px 15px !important;
+    height: auto !important;
+    border: 1px solid #215439 !important;
+    border-radius: 5px !important;
+    width: 100% !important;
+  }
+
+  .product-total2 {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "Quicksand", Arial, sans-serif;
+    color: #111;
+    border-collapse: collapse;
+    border-spacing: 0;
+    box-sizing: border-box;
+    vertical-align: middle !important;
+    padding: 12px 30px !important;
+    border: 1px solid #ccc !important;
+    line-height: 1.428571429;
+    text-align: right;
+    width: 17%;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .stylettsp {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    border-collapse: collapse;
+    border-spacing: 0;
+    box-sizing: border-box;
+    font-family: inherit;
+    color: inherit;
+    font-size: 15px;
+    margin: 0 0 10px;
+    font-weight: bold;
+    line-height: 21px;
+  }
+
+  .product-info2 {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "Quicksand", Arial, sans-serif;
+    color: #111;
+    border-collapse: collapse;
+    border-spacing: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    vertical-align: middle !important;
+    border: 1px solid #ccc !important;
+    line-height: 1.428571429;
+    position: relative;
+    padding: 20px !important;
+  }
+
+  .clearfixtt {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "Quicksand", Arial, sans-serif;
+    line-height: 1.428571429;
+    color: #111;
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 17px;
+    display: block;
+    padding: 10px 15px;
+  }
+
+  .text1 {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "Quicksand", Arial, sans-serif;
+    line-height: 1.428571429;
+    color: #111;
+    box-sizing: border-box;
+    float: left;
+    width: 52%;
+    font-size: 16px;
+  }
+
+  .price1 {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "Quicksand", Arial, sans-serif;
+    line-height: 1.428571429;
+    color: #111;
+    font-size: 17px;
+    box-sizing: border-box;
+    float: right;
+    font-weight: bold;
+    width: 48%;
+    text-align: right;
+  }
+
+  .checkout-process1 {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "Quicksand", Arial, sans-serif;
+    line-height: 1.428571429;
+    color: #111;
+    font-size: 15px;
+    box-sizing: border-box;
+  }
+
+  .checkout-process-button1 {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "Quicksand", Arial, sans-serif;
+    line-height: 1.428571429;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: #c6231e;
+    border: none;
+    width: 100%;
+    display: block;
+    font-size: 18px;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 15px;
+  }
+
+  .hihi {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "Quicksand", Arial, sans-serif;
+    line-height: 1.428571429;
+    color: #111;
+    font-size: 15px;
+    box-sizing: border-box;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left;
+    width: 25%;
+  }
+
+  .cart-totals {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "Quicksand", Arial, sans-serif;
+    line-height: 1.428571429;
+    color: #111;
+    font-size: 15px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 15px;
+    border: 1px solid #215439;
+    overflow-x: hidden;
+    margin-bottom: 15px;
+  }
+
+  .hidden {
+    display: none;
+  }

@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="ThemeBucket">
+  <link rel="shortcut icon" href="images/favicon.png">
+
+  <title>Trang quản trị bán sách</title>
+
+  <!--Core CSS -->
+  <link href="bs3/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-reset.css" rel="stylesheet">
+  <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-responsive.css" rel="stylesheet" />
+
+  <!-- Just for debugging purposes. Don't actually copy this line! -->
+  <!--[if lt IE 9]>
+    <script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  <style type="text/css">
+    .is_hidden {
+      display: none;
+    }
+  </style>
+</head>
+
+<body class="full-width">
+
+  <section id="container" class="hr-menu">
+    <!--header start-->
+    <header class="header fixed-top">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle hr-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="fa fa-bars"></span>
+        </button>
+
+        <div class="horizontal-menu navbar-collapse collapse ">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html"><i class="fa fa-home"></i>&nbsp;Trang chủ</a></li>
+
+            <li class="dropdown">
+              <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href="#"><i
+                  class="fa fa-tasks"></i> &nbsp;Danh mục<b class=" fa fa-angle-down"></b></a>
+              <ul class="dropdown-menu">
+                <li class="menu_theloai"><a href="#"><i class="fa fa-hand-o-right"></i>&nbsp;Thể loại</a></li>
+                <li class="menu_nxb"><a href="#"><i class="fa fa-hand-o-right"></i>&nbsp;Nhà xuất bản</a></li>
+                <li class="menu_tacgia"><a href="#"><i class="fa fa-hand-o-right"></i>&nbsp;Tác giả</a></li>
+                <li class="menu_sach"><a href="#"><i class="fa fa-hand-o-right"></i>&nbsp;Sách</a></li>
+
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href="#"><i
+                  class="fa fa-shopping-cart"></i>&nbsp;Bán hàng<b class=" fa fa-angle-down"></b></a>
+              <ul class="dropdown-menu">
+                <li class="menu_dondh"><a href="#"><i class="fa fa-hand-o-right"></i>&nbsp;Đơn đặt hàng</a></li>
+              </ul>
+            </li>
+          </ul>
+
+        </div>
+
+        <div class="top-nav hr-top-nav">
+          <ul class="nav pull-right top-menu">
+            <li>
+              <input type="text" class="form-control search" placeholder=" Search">
+            </li>
+            <!-- user login dropdown start-->
+            <li class="dropdown">
+              <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                <img alt="" class="myimg" src="images/avatar-mini-2.jpg">
+                <span class="myname">John Xim</span>
+                <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu extended logout">
+                <li class="btnchangeavartar"><a href="#"><i class=" fa fa-suitcase"></i>Thay đổi ảnh đại diện</a></li>
+                <li class="btn_logout"><a href="#"><i class="fa fa-key"></i> Log Out</a></li>
+              </ul>
+            </li>
+            <!-- user login dropdown end -->
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!--header end-->
+
+    <!--main content start-->
+    <section id="main-content">
+      <section class="wrapper">
+        <div class="row">
+          <div class="col-lg-12">
+            <!--breadcrumbs start -->
+            <ul class="breadcrumb titlebreadcrumb">
+              <li><a href="demo.html"><i class="fa fa-home"></i>Trang chủ</a></li>
+              <li class="active">Thể loại</li>
+            </ul>
+            <!--breadcrumbs end -->
+          </div>
+        </div>
+
+        <!-- Demo giải pt bậc nhất-->
+
+        <!--Thông tin thể loại-->
+        <div class="form_thongtintheloai">
+          <h3 align="center">THÔNG TIN THỂ LOẠI</h3>&nbsp;
+          <!--Mở form thể loại-->
+          <div class="row">
+
+            <div class="col-sm-12">
+              <div class="col-sm-5" align="right">
+                Mã thể loại:
+              </div>
+              <div class="col-sm-3">
+                <input type="text" class="form-control txtmatl">
+              </div>
+            </div>&nbsp;
+
+            <div class="col-sm-12">
+              <div class="col-sm-5" align="right">
+                Tên thể loại:
+              </div>
+              <div class="col-sm-3">
+                <input type="text" class="form-control txttentl">
+              </div>
+            </div> <br />&nbsp;
+
+            <div class="col-sm-12" align="center">
+              <button type="button" class="btn btn-success btn_themtl">Thêm</button>&nbsp;
+              <button type="button" class="btn btn-success btn_xoatl">Xóa</button>&nbsp;
+              <button type="button" class="btn btn-success btn_luutl">Lưu</button>&nbsp;
+              <button type="button" class="btn btn-success btn_lamlaitl">Làm lại</button>
+            </div>
+          </div>&nbsp;
+          <!--Đóng form thể loại-->
+
+          <!--Bắt đầu bảng dữ liệu thể loại-->
+          <div class="row">
+            <div class="col-sm-12">
+              <section class="panel">
+                <div class="panel-body">
+                  <!--bắt đầu bảng thể loại-->
+                  <table class="table  table-hover general-table">
+
+                    <thead>
+                      <tr>
+                        <th>STT</th>
+                        <th class="hidden-phone">Mã TL</th>
+                        <th>Tên TL</th>
+                        <th>Xem</th>
+
+                      </tr>
+                    </thead>
+
+                    <tbody class="listdstheloai">
+
+                      <!-- <tr>
+                        <td>1</td>
+                        <td class="hidden-phone">TH</td>
+                        <td>Tin học</td>
+                        <td>
+                          <span class="label label-warning label-mini">Xóa</span>
+                        </td>
+                        <td>
+                          <span class="label label-warning label-mini">Sửa</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td class="hidden-phone">KT</td>
+                        <td>Kế toán</td>
+                        <td>
+                          <span class="label label-warning label-mini">Xóa</span>
+                        </td>
+                        <td>
+                          <span class="label label-warning label-mini">Sửa</span>
+                        </td>
+                      </tr> -->
+                    </tbody>
+                  </table>
+                  <!--kết thúc bảng thể loại-->
+                </div>
+
+                <div class="pagenumbertheloai" align="center"></div>
+
+              </section>
+            </div>
+          </div>
+          <!--kết thúc bảng dữ liệu thể loại-->
+        </div>
+        <!--Kết thúc thông tin thể loại-->
+
+        <!--Thông tin NXB-->
+        <div class="form_thongtinnxb is_hidden">
+          <h3 align="center">THÔNG TIN NHÀ XUẤT BẢN</h3>&nbsp;
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="col-sm-2">
+                Mã NXB:
+              </div>
+              <div class="col-sm-4">
+                <input type="text" class="form-control txtmanxb" placeholder="Full Name">
+              </div>
+              <div class="col-sm-2">
+                Tên NXB:
+              </div>
+              <div class="col-sm-4">
+                <input type="text" class="form-control txttennxb" placeholder="Full Name">
+              </div>&nbsp;
+            </div>&nbsp;
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="col-sm-2">
+                SĐT:
+              </div>
+              <div class="col-sm-4">
+                <input type="text" class="form-control txtsdtnxb" placeholder="Full Name">
+              </div>
+              <div class="col-sm-2">
+                Địa chỉ:
+              </div>
+              <div class="col-sm-4">
+                <input type="text" class="form-control txtdiachinxb" placeholder="Full Name">
+              </div>&nbsp;
+            </div>&nbsp;
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="col-sm-2">
+                EMail:
+              </div>
+              <div class="col-sm-4">
+                <input type="text" class="form-control txtemailnxb" placeholder="Full Name">
+              </div>
+            </div>&nbsp;
+          </div>
+          <div class="col-sm-12" align="center">
+            <button type="button" class="btn btn-success btn_themnxb">Thêm</button>&nbsp;
+            <button type="button" class="btn btn-success btn_luunxb">Lưu</button>
+          </div>&nbsp;
+          <!--Bắt đầu bảng dữ liệu NXB-->
+          <div class="row">
+            <div class="col-sm-12">
+              <section class="panel">
+                <div class="panel-body">
+                  <!--bắt đầu bảng NXB-->
+                  <table class="table  table-hover general-table">
+                    <thead>
+                      <tr>
+                        <th>STT</th>
+                        <th class="hidden-phone">Mã NXB</th>
+                        <th>Tên NXB</th>
+                        <th>ĐT</th>
+                        <th>Địa chỉ</th>
+                        <th>Email</th>
+                        <th>Xóa</th>
+                        <th>Sửa</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td class="hidden-phone">NXBTK</td>
+                        <td>Nhà xuất bản thống kê</td>
+                        <td>03453468</td>
+                        <td>HN</td>
+                        <td>NXBTK@gmail.com</td>
+                        <td>
+                          <span class="label label-warning label-mini">Xóa</span>
+                        </td>
+                        <td>
+                          <span class="label label-warning label-mini">Sửa</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td class="hidden-phone">NXBKT</td>
+                        <td>Nhà xuất bản kỹ thuật</td>
+                        <td>0345834787</td>
+                        <td>SG</td>
+                        <td>NXBKT@gmail.com</td>
+                        <td>
+                          <span class="label label-warning label-mini">Xóa</span>
+                        </td>
+                        <td>
+                          <span class="label label-warning label-mini">Sửa</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <!--kết thúc bảng NXB-->
+                </div>
+              </section>
+            </div>
+          </div>
+          <!--kết thúc bảng dữ liệu NXB-->
+        </div>
+        <!--Kết thúc thông tin NXB-->
+
+        <!--Thông tin tác giả-->
+        <div class="form_thongtintacgia is_hidden">
+          <h3 align="center">THÔNG TIN TÁC GIẢ</h3>&nbsp;
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="col-sm-2">
+                Mã TG:
+              </div>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" placeholder="Full Name">
+              </div>
+              <div class="col-sm-2">
+                Tên TG:
+              </div>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" placeholder="Full Name">
+              </div>&nbsp;
+            </div>&nbsp;
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="col-sm-2">
+                SĐT:
+              </div>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" placeholder="Full Name">
+              </div>
+              <div class="col-sm-2">
+                Địa chỉ:
+              </div>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" placeholder="Full Name">
+              </div>&nbsp;
+            </div>&nbsp;
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="col-sm-2">
+                EMail:
+              </div>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" placeholder="Full Name">
+              </div>
+            </div>&nbsp;
+          </div>
+          <div class="col-sm-12" align="center">
+            <button type="button" class="btn btn-success">Thêm</button>&nbsp;
+            <button type="button" class="btn btn-success">Lưu</button>
+          </div>&nbsp;
+          <!--Bắt đầu bảng dữ liệu tác giả-->
+          <div class="row">
+            <div class="col-sm-12">
+              <section class="panel">
+                <div class="panel-body">
+                  <!--bắt đầu bảng tác giả-->
+                  <table class="table  table-hover general-table">
+                    <thead>
+                      <tr>
+                        <th>STT</th>
+                        <th class="hidden-phone">Mã TG</th>
+                        <th>Tên TG</th>
+                        <th>ĐT</th>
+                        <th>Địa chỉ</th>
+                        <th>Email</th>
+                        <th>Xóa</th>
+                        <th>Sửa</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td class="hidden-phone">NXBTK</td>
+                        <td>Nhà xuất bản thống kê</td>
+                        <td>03453468</td>
+                        <td>HN</td>
+                        <td>NXBTK@gmail.com</td>
+                        <td>
+                          <span class="label label-warning label-mini">Xóa</span>
+                        </td>
+                        <td>
+                          <span class="label label-warning label-mini">Sửa</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td class="hidden-phone">NXBKT</td>
+                        <td>Nhà xuất bản kỹ thuật</td>
+                        <td>0345834787</td>
+                        <td>SG</td>
+                        <td>NXBKT@gmail.com</td>
+                        <td>
+                          <span class="label label-warning label-mini">Xóa</span>
+                        </td>
+                        <td>
+                          <span class="label label-warning label-mini">Sửa</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <!--kết thúc bảng tác giả-->
+                </div>
+              </section>
+            </div>
+          </div>
+          <!--kết thúc bảng dữ liệu tác giả-->
+        </div>
+        <!--Kết thúc thông tin tác giả-->
+
+        <!--Thông tin tác giả-->
+        <div class="form_dondh is_hidden">
+          <h3 align="center">THÔNG TIN ĐƠN ĐẶT HÀNG</h3>&nbsp;
+
+          <table class="table  table-hover general-table">
+            <thead>
+              <tr>
+                <th>STT</th>
+                <th class="hidden-phone">Số DDH</th>
+                <th>Ngày mua</th>
+                <th>Ngày giao dự kiến</th>
+                <th>Ngày giao thực tế</th>
+                <th>Khách hàng</th>
+                <th>Nhân viên</th>
+                <th>Trạng thái</th>
+                <th>Thao tác</th>
+              </tr>
+            </thead>
+            <tbody class="listallddh">
+              <tr>
+                <td>001</td>
+                <td class="hidden-phone">2/12/2020</td>
+                <td>3/12/2020</td>
+                <td>4/12/2020</td>
+                <td>Xim</td>
+                <td>Nhung</td>
+                <td>Chưa xử lý</td>
+                <td>
+                  <span class="label label-warning label-mini btn_xoadh">Xóa</span>
+                </td>
+                <td>
+                  <a href="#"><span class="label label-warning label-mini btn_xulydh">Xử lý ĐH</span></a>
+                </td>
+              </tr>
+              <tr>
+                <td>002</td>
+                <td class="hidden-phone">2/12/2020</td>
+                <td>3/12/2020</td>
+                <td>4/12/2020</td>
+                <td>Nhã</td>
+                <td>Linh</td>
+                <td>Chưa xử lý</td>
+                <td>
+                  <span class="label label-warning label-mini btn_xoadh">Xóa</span>
+                </td>
+                <td>
+                  <a href="#"><span class="label label-warning label-mini btn_xulydh">Xử lý ĐH</span></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <!--kết thúc bảng tác giả-->
+        </div>
+      </section>
+      </div>
+      </div>
+      <!--kết thúc bảng dữ liệu tác giả-->
+      </div>
+      <!--Kết thúc thông tin tác giả-->
+
+
+      <!--Dưới đây là modal được thêm vào ngày 2/12/2020-->
+      <div class="row">
+        <div class="modal fade showxulydh" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+          aria-hidden="true">
+          <div class=" modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">Thay đổi trạng thái đơn hàng</h4>
+              </div>
+              <div class="modal-body">
+
+                <input type="radio" checked name="statusdh" />Đang xử lý &nbsp;
+                <input type="radio" name="statusdh" />Đã xử lý xong &nbsp;
+                <input type="radio" name="statusdh" />Đang giao hàng &nbsp;
+
+              </div>
+              <div class="modal-footer">
+                <button data-dismiss="modal" class="btn btn-default" type="button">Đóng</button>
+                <button class="btn btn-success" type="button">Xác nhận</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+
+      <!-- Dưới đây là modal được thêm ngày 6/1/2021 -->
+      <div class="showmodal_changeavartar modal fade in" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <h4 class="modal-title">Thay đổi hình<i class="title_mamon_outline"></i></h4>
+            </div>
+            <div class="modal-body" align="center">
+              <form role="form" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                  <label class="col-sm-2 control-label"><span style="font-size: 13px;"></span><span
+                      style="font-size: 16px; color: #99003d;"></span>
+                  </label>
+                  <div class="col-sm-3 iconimage">
+                    <input id="imgSP" style="display:none" type="file" accept="image/*">
+                    <a href="#">
+                      <label for="imgSP" class="custom-file-upload">
+                        <img width="25px" style="border:0px" src="images/iconuploadimage.png">Chọn hình</label>
+                    </a>
+                  </div>
+                  <div class="col-sm-2">
+                    <img class="is-hidden" id="imgSPPreview" width="150" height="150">
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-round btn-danger btn_update_avartar">Cập nhật</button>
+              <button data-dismiss="modal" class="btn btn-default" type="button">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- -->
+
+    </section>
+  </section>
+  <!--main content end-->
+
+
+  <!--footer start-->
+  <footer class="footer-section">
+    <div class="text-center">
+      2020 &copy; Admin QLBH by Đặng Văn Xim
+      <a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
+    </div>
+  </footer>
+  <!--footer end-->
+  </section>
+
+  <!--Bộ script dưới này vẫn đang trong body-->
+
+  <!--Core js-->
+  <script src="js/jquery.js"></script>
+  <script src="bs3/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/hover-dropdown.js"></script>
+  <script src="js/jQuery-slimScroll-1.3.0/jquery.slimscroll.js"></script>
+  <script src="js/jquery.nicescroll.js"></script>
+
+  <!--common script init for all pages-->
+  <script src="js/scripts.js"></script>
+
+  <!--Thêm liên kết file js-->
+  <!--thêm lần 1-->
+  <script src="js_user/main.js"></script>
+  <!--thêm lần 2-->
+  <script src="js/bootbox.min.js"></script>
+  <!--thêm lần 3-->
+  <script src="js_user/form_theloai.js"></script>
+  <!--thêm lần 4-->
+  <script src="js_user/form_nhaxb.js"></script>
+
+
+</body>
+
+</html>

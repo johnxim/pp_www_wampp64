@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="ThemeBucket">
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <title>Admin Product</title>
+
+    <!--Core CSS -->
+    <link href="bs3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-reset.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-responsive.css" rel="stylesheet" />
+    <style type="text/css">
+        .hidden{
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body class="full-width">
+
+    <section id="container" class="hr-menu">
+        <!--header start-->
+        <header class="header fixed-top">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle hr-toggle" data-toggle="collapse"
+                    data-target=".navbar-collapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <!--logo start-->
+                <div class="brand">
+                    <a href="#" class="logo">
+                        <img src="images/GumShop.png" style="width: 168px; height: 32px;" alt="">
+                    </a>
+                </div>
+                <!--logo end-->
+                <div class="horizontal-menu navbar-collapse collapse ">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href="#">Quản lý
+                                danh mục&nbsp;<b class=" fa fa-angle-down"></b></a>
+                            <ul class="dropdown-menu">
+                                <li class="admin_frm_sp"><a href="#">Sản phẩm</a></li>
+                                <li class="admin_frm_kh"><a href="#">Khách hàng</a></li>
+                                <li class="admin_frm_hd"><a href="#">Hóa đơn</a></li>
+                                <li class="admin_frm_shipper"><a href="#">Shipper</a></li>
+                                <li class="admin_frm_tl"><a href="#">Thể loại</a></li>
+                                <li class="admin_frm_ncc"><a href="#">Nhà cung cấp</a></li>
+                            </ul>
+                        <li><a href="#" class="btngiohang"><span class="fa fa-shopping-cart"></span>&nbsp;Bán hàng</a>
+                    </ul>
+                </div>
+                <div class="top-nav hr-top-nav">
+                    <ul class="nav pull-right top-menu">
+                        <li>
+                            <input type="text" class="form-control search" placeholder=" Search">
+                        </li>
+                        <!-- user login dropdown start-->
+                        <li class="dropdown">
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <img alt="" class="myimg" src="">
+                                <span class="myname"></span>
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu extended logout">
+                                <li><a href="#"><i class=" fa fa-suitcase"></i>Profile</a></li>
+                                <li class="btn_logout"><a href="#"><i class="fa fa-key"></i> Log Out</a></li>
+                            </ul>
+                        </li>
+                        <!-- user login dropdown end -->
+                    </ul>
+                </div>
+
+            </div>
+
+        </header>
+        <!--header end-->
+
+        <!--sidebar start-->
+        <!--main content start-->
+        <section id="main-content">
+            <section class="wrapper">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!--breadcrumbs start -->
+                        <ul class="breadcrumb titlebreadcrumb">
+                            <li><a href="#"><i class="fa fa-home"></i>Quản lý danh mục</a></li>
+                            <li class="actives">Sản Phẩm</li>
+                        </ul>
+                        <!--breadcrumbs end -->
+                    </div>
+                </div>
+
+                <!--Thông tin sản phẩm-->
+                <div class="form_sp">
+                    <h3 align="center">QUẢN LÝ SẢN PHẨM</h3>&nbsp;
+                    <!--Mở form-->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="col-sm-2" align="right">
+                                <h5>Mã sản phẩm:</h5>
+                            </div>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control txtmasp">
+                            </div>
+                            <div class="col-sm-1" align="right">
+                                <h5>Thể loại:</h5>
+                            </div>
+                            <div class="col-sm-4">
+                                <select name="cars" id="cars" style="font-size: 16px;">
+                                    
+                                </select>
+                            </div>
+                        </div>&nbsp;
+
+                        <div class="col-sm-12">
+                            <div class="col-sm-2" align="right">
+                                <h5>Tên sản phẩm:</h5>
+                            </div>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control txttensp">
+                            </div>
+                            <div class="col-sm-1" align="right">
+                                <h5>Nhà cung cấp:</h5>
+                            </div>
+                            <div class="col-sm-4">
+                                <select name="txtnccsp" id="txtnccsp" style="font-size: 16px;">
+                                    
+                                </select>
+                            </div>
+                        </div><br>&nbsp;
+
+                        <div class="col-sm-12">
+                            <div class="col-sm-2" align="right">
+                                <h5>Giá niêm yết:</h5>
+                            </div>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control txtgianysp">
+                            </div>&nbsp;
+                            <div class="col-sm-1" align="right">
+                                <h5>Giá thực:</h5>
+                            </div>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control txtgiathucsp">
+                            </div>
+                        </div><br>&nbsp;
+
+                        <div class="col-sm-12">
+                            <div class="col-sm-2" align="right">
+                                <h5>Ảnh:</h5>
+                            </div>
+                            <div class="col-sm-4">
+                                <input type="file" value="C:\wamp64\www\1851063119_DANGVANXIM\images\keo-gum-khong-duong-so-5-vi-bac-ha-the-xanh-duong-1511235009.jpg" class="txtanhsp" style="font-size: 18px;"><br>
+                                <img src="" alt="Ảnh sản phẩm" class="anhspadmin" width="200px;">
+                            </div>&nbsp;
+                        </div><br>&nbsp;
+
+
+                        <div class="col-sm-12" align="center">
+                            <button type="button" class="btn btn-success btn_themsp">Thêm</button>&nbsp;
+                            <button type="button" class="btn btn-success btn_luusp">Lưu</button>&nbsp;
+                            <button type="button" class="btn btn-success btn_xoasp">Xóa</button>
+                            <button type="button" class="btn btn-success btn_timkiemsp">Tìm kiếm</button>&nbsp;
+                            <button type="button" class="btn btn-success btn_lamlaisp">Làm lại</button>&nbsp;
+                        </div>
+                    </div>&nbsp;
+
+                    <!--Đóng form-->
+
+                    <!--Bắt đầu bảng dữ liệu-->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <section class="panel">
+                                <div class="panel-body">
+                                    <!--bắt đầu bảng-->
+                                    <table class="table  table-hover general-table">
+                                        <thead>
+                                            <tr>
+                                                <th>STT</th>
+                                                <th class="hidden-phone">Mã sản phẩm</th>
+                                                <th>Tên sản phẩm</th>
+                                                <th>Giá thực</th>
+                                                <th>Giá niêm yết</th>
+                                                <th>Thể loại</th>
+                                                <th>Nhà cung cấp</th>
+                                                <th>Ảnh</th>
+                                                <th>Xóa/Sửa</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="ttsp">
+
+                                        </tbody>
+                                    </table>
+                                    <!--kết thúc bảng-->
+
+                                    <div class="row" align="center">
+                                        <div class="btn-group paginationsp">
+                                            <!-- Thanh điều hướng số -->
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <!--kết thúc bảng dữ liệu-->
+                </div>
+                <!--Kết thúc Thông tin sản phẩm-->
+
+
+
+                <!--Thông tin sản phẩm-->
+                <div class="form_hd hidden">
+                    <h3 align="center">QUẢN LÝ HÓA ĐƠN</h3>&nbsp;
+                    <!--Mở form-->
+                    <div class="row">
+
+                        <div class="col-sm-12" align="center">
+                            <button type="button" class="btn btn-success btn_datt">Đơn đã thanh toán</button>&nbsp;
+                            <button type="button" class="btn btn-success btn_chuatt">Đơn chưa thanh toán</button>&nbsp;
+                            <button type="button" class="btn btn-success btn_alldh">Tất cả đơn hàng</button>&nbsp;
+                        </div>
+                    </div>&nbsp;
+
+                    <!--Đóng form-->
+
+                    <!--Bắt đầu bảng dữ liệu-->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <section class="panel">
+                                <div class="panel-body">
+                                    <!--bắt đầu bảng-->
+                                    <table class="table  table-hover general-table">
+                                        <thead>
+                                            <tr>
+                                                <th>STT</th>
+                                                <th class="hidden-phone">Mã hóa đơn</th>
+                                                <th>Mã KH</th>
+                                                <th>Ngày đặt hàng</th>
+                                                <th>Tổng tiền</th>
+                                                <th>Shipper</th>
+                                                <th>Tình trạng</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="ttdh">
+
+                                        </tbody>
+                                    </table>
+                                    <!--kết thúc bảng-->
+
+                                    <div class="row" align="center">
+                                        <div class="btn-group paginationhd">
+                                            <!-- Thanh điều hướng số -->
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <!--kết thúc bảng dữ liệu-->
+                </div>
+                <!--Kết thúc Thông tin sản phẩm-->
+
+                
+                <!--Thông tin sản phẩm-->
+                <div class="form_kh hidden">
+                    <h3 align="center">QUẢN LÝ KHÁCH HÀNG</h3>&nbsp;
+                    <!--Mở form-->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="col-sm-5" align="right">
+                                <h5>Mã khách hàng:</h5>
+                            </div>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control txtmakh">
+                            </div>
+
+                        </div>
+
+                    </div>&nbsp;
+
+                    <div class="row">
+                        <div class="col-sm-12" align="center">
+                            <button type="button" class="btn btn-success btn_timkiem">Tìm kiếm</button>&nbsp;
+                            <button type="button" class="btn btn-success btn_lamlaikh">Làm lại</button>&nbsp;
+                        </div>
+                    </div>&nbsp;
+
+                    <!--Đóng form-->
+
+                    <!--Bắt đầu bảng dữ liệu-->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <section class="panel">
+                                <div class="panel-body">
+                                    <!--bắt đầu bảng-->
+                                    <table class="table  table-hover general-table">
+                                        <thead>
+                                            <tr>
+                                                <th>STT</th>
+                                                <th class="hidden-phone">Mã khách hàng</th>
+                                                <th>Tên khách hàng</th>
+                                                <th>SĐT</th>
+                                                <th>Địa chỉ</th>
+                                                <th>Tên tài khoản</th>
+                                                <th>Mật khẩu</th>
+                                                <th>Avatar</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="ttkh">
+
+                                        </tbody>
+                                    </table>
+                                    <!--kết thúc bảng-->
+
+                                    <div class="row" align="center">
+                                        <div class="btn-group paginationkh">
+                                            <!-- Thanh điều hướng số -->
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <!--kết thúc bảng dữ liệu-->
+                </div>
+                <!--Kết thúc Thông tin sản phẩm-->
+
+
+                <!--Thông tin sản phẩm-->
+                <div class="form_ncc hidden">
+                    <h3 align="center">QUẢN LÝ NHÀ CUNG CẤP</h3>&nbsp;
+                    <!--Mở form-->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="col-sm-5" align="right">
+                                <h5>Mã NCC:</h5>
+                            </div>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control txtmancc">
+                            </div>
+                        </div>&nbsp;
+
+                        <div class="col-sm-12">
+                            <div class="col-sm-5" align="right">
+                                <h5>Tên NCC:</h5>
+                            </div>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control txttenncc">
+                            </div>
+                        </div><br>&nbsp;
+
+                        <div class="col-sm-12">
+                            <div class="col-sm-5" align="right">
+                                <h5>Địa chỉ NCC:</h5>
+                            </div>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control txtdiachincc">
+                            </div>
+
+                        </div><br>&nbsp;
+
+                        <div class="col-sm-12" align="center">
+                            <button type="button" class="btn btn-success btn_themncc">Thêm</button>&nbsp;
+                            <button type="button" class="btn btn-success btn_luuncc">Lưu</button>&nbsp;
+                            <button type="button" class="btn btn-success btn_xoancc">Xóa</button>
+                            <button type="button" class="btn btn-success btn_timkiemncc">Tìm kiếm</button>&nbsp;
+                            <button type="button" class="btn btn-success btn_lamlaincc">Làm lại</button>&nbsp;
+                        </div>
+                    </div>&nbsp;
+
+                    <!--Đóng form-->
+
+                    <!--Bắt đầu bảng dữ liệu-->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <section class="panel">
+                                <div class="panel-body">
+                                    <!--bắt đầu bảng-->
+                                    <table class="table  table-hover general-table">
+                                        <thead>
+                                            <tr>
+                                                <th>STT</th>
+                                                <th class="hidden-phone">Mã nhà cung cấp</th>
+                                                <th>Tên nhà cung cấp</th>
+                                                <th>Địa chỉ</th>
+                                                <th>Xóa/Sửa</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="ttncc">
+
+                                        </tbody>
+                                    </table>
+                                    <!--kết thúc bảng-->
+
+                                    <div class="row" align="center">
+                                        <div class="btn-group paginationncc">
+                                            <!-- Thanh điều hướng số -->
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <!--kết thúc bảng dữ liệu-->
+                </div>
+                <!--Kết thúc Thông tin sản phẩm-->
+
+
+                <!--Thông tin sản phẩm-->
+                <div class="form_shipper hidden">
+                    <h3 align="center">QUẢN LÝ SHIPPER</h3>&nbsp;
+                    <!--Mở form-->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="col-sm-5" align="right">
+                                <h5>Mã shipper:</h5>
+                            </div>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control txtmashipper">
+                            </div>
+                        </div>&nbsp;
+
+                        <div class="col-sm-12">
+                            <div class="col-sm-5" align="right">
+                                <h5>Tên shipper:</h5>
+                            </div>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control txttenshipper">
+                            </div>
+                        </div><br>&nbsp;
+
+                        <div class="col-sm-12">
+                            <div class="col-sm-5" align="right">
+                                <h5>SĐT shipper:</h5>
+                            </div>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control txtsdtshipper">
+                            </div>
+                        </div><br>&nbsp;
+
+                        <div class="col-sm-12" align="center">
+                            <button type="button" class="btn btn-success btn_themshipper">Thêm</button>&nbsp;
+                            <button type="button" class="btn btn-success btn_luushipper">Lưu</button>&nbsp;
+                            <button type="button" class="btn btn-success btn_xoashipper">Xóa</button>
+                            <button type="button" class="btn btn-success btn_timkiemshipper">Tìm kiếm</button>&nbsp;
+                            <button type="button" class="btn btn-success btn_lamlaishipper">Làm lại</button>&nbsp;
+                        </div>
+                    </div>&nbsp;
+
+                    <!--Đóng form-->
+
+                    <!--Bắt đầu bảng dữ liệu-->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <section class="panel">
+                                <div class="panel-body">
+                                    <!--bắt đầu bảng-->
+                                    <table class="table  table-hover general-table">
+                                        <thead>
+                                            <tr>
+                                                <th>STT</th>
+                                                <th class="hidden-phone">Mã shipper</th>
+                                                <th>Tên shipper</th>
+                                                <th>SĐT shipper</th>
+                                                <th>Xóa/Sửa</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="ttshipper">
+
+                                        </tbody>
+                                    </table>
+                                    <!--kết thúc bảng-->
+
+                                    <div class="row" align="center">
+                                        <div class="btn-group paginationshipper">
+                                            <!-- Thanh điều hướng số -->
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <!--kết thúc bảng dữ liệu-->
+                </div>
+                <!--Kết thúc Thông tin sản phẩm-->
+
+
+                <!--Thông tin sản phẩm-->
+                <div class="form_tl hidden">
+                    <h3 align="center">QUẢN LÝ THỂ LOẠI</h3>&nbsp;
+                    <!--Mở form-->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="col-sm-5" align="right">
+                                <h5>Mã thể loại:</h5>
+                            </div>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control txtmatl">
+                            </div>
+                        </div>&nbsp;
+
+                        <div class="col-sm-12">
+                            <div class="col-sm-5" align="right">
+                                <h5>Tên thể loại:</h5>
+                            </div>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control txttentl">
+                            </div>
+                        </div><br>&nbsp;
+
+                        <div class="col-sm-12" align="center">
+                            <button type="button" class="btn btn-success btn_themtl">Thêm</button>&nbsp;
+                            <button type="button" class="btn btn-success btn_luutl">Lưu</button>&nbsp;
+                            <button type="button" class="btn btn-success btn_xoatl">Xóa</button>
+                            <button type="button" class="btn btn-success btn_timkiemtl">Tìm kiếm</button>&nbsp;
+                            <button type="button" class="btn btn-success btn_lamlaitl">Làm lại</button>&nbsp;
+                        </div>
+                    </div>&nbsp;
+
+                    <!--Đóng form-->
+
+                    <!--Bắt đầu bảng dữ liệu-->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <section class="panel">
+                                <div class="panel-body">
+                                    <!--bắt đầu bảng-->
+                                    <table class="table  table-hover general-table">
+                                        <thead>
+                                            <tr>
+                                                <th>STT</th>
+                                                <th class="hidden-phone">Mã thể loại</th>
+                                                <th>Tên thể loại</th>
+                                                <th>Sửa/Xóa</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="tttl">
+
+                                        </tbody>
+                                    </table>
+                                    <!--kết thúc bảng-->
+
+                                    <div class="row" align="center">
+                                        <div class="btn-group paginationtl">
+                                            <!-- Thanh điều hướng số -->
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <!--kết thúc bảng dữ liệu-->
+                </div>
+                <!--Kết thúc Thông tin sản phẩm-->
+
+
+
+            </section>
+
+
+        </section>
+    </section>
+    <!--main content end-->
+
+
+    <!--footer start-->
+    <footer class="footer-section">
+        <div class="text-center">
+            2022 &copy; Admin QLBH by LTX
+            <a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
+        </div>
+    </footer>
+    <!--footer end-->
+    </section>
+
+    <!--Bộ script dưới này vẫn đang trong body-->
+
+    <!-- Placed js at the end of the document so the pages load faster -->
+    <!--Core js-->
+    <script src="js/jquery.js"></script>
+    <script src="bs3/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/hover-dropdown.js"></script>
+    <script src="js/jQuery-slimScroll-1.3.0/jquery.slimscroll.js"></script>
+    <script src="js/jquery.nicescroll.js"></script>
+
+    <!--Easy Pie Chart-->
+    <script src="js/easypiechart/jquery.easypiechart.js"></script>
+    <!--Sparkline Chart-->
+    <script src="js/sparkline/jquery.sparkline.js"></script>
+    <!--common script init for all pages-->
+    <script src="js/scripts.js"></script>
+
+    <!--for me-->
+    <script type="text/javascript" src="js1/main.js"></script>
+    <script type="text/javascript" src="js/bootbox.min.js"></script>
+    <script type="text/javascript" src="js1/Admin_frm_sanpham.js"></script>
+    <script type="text/javascript" src="js1/Admin_frm_hoadon.js"></script>
+    <script type="text/javascript" src="js1/Admin_frm_khachhang.js"></script>
+    <script type="text/javascript" src="js1/Admin_frm_ncc.js"></script>
+    <script type="text/javascript" src="js1/Admin_frm_shipper.js"></script>
+    <script type="text/javascript" src="js1/Admin_frm_theloai.js"></script>
+    <script type="text/javascript" src="js1/login_call.js"></script>
+    
+
+
+</body>
+
+</html>

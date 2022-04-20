@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="ThemeBucket">
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <title>Admin Product</title>
+
+    <!--Core CSS -->
+    <link href="bs3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-reset.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-responsive.css" rel="stylesheet" />
+
+</head>
+
+<body class="full-width">
+
+    <section id="container" class="hr-menu">
+        <!--header start-->
+        <header class="header fixed-top">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle hr-toggle" data-toggle="collapse"
+                    data-target=".navbar-collapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <!--logo start-->
+                <div class="brand">
+                    <a href="#" class="logo">
+                        <img src="images/GumShop.png" style="width: 168px; height: 32px;" alt="">
+                    </a>
+                </div>
+                <!--logo end-->
+                <div class="horizontal-menu navbar-collapse collapse ">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href="#">Quản lý
+                                danh mục&nbsp;<b class=" fa fa-angle-down"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="admin_frm_sanpham.html">Sản phẩm</a></li>
+                                <li><a href="admin_frm_khachhang.html">Khách hàng</a></li>
+                                <li><a href="admin_frm_hoadon.html">Hóa đơn</a></li>
+                                <li><a href="admin_frm_chitiethoadon.html">Chi tiết hóa đơn</a></li>
+                                <li><a href="admin_frm_shipper.html">Shipper</a></li>
+                                <li><a href="admin_frm_theloai.html">Thể loại</a></li>
+                                <li><a href="admin_frm_nhacungcap.html">Nhà cung cấp</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="btngiohang"><span class="fa fa-shopping-cart"></span>&nbsp;Bán hàng</a>
+
+                    </ul>
+                </div>
+                <div class="top-nav hr-top-nav">
+                    <ul class="nav pull-right top-menu">
+                        <li>
+                            <input type="text" class="form-control search" placeholder=" Search">
+                        </li>
+                        <!-- user login dropdown start-->
+                        <li class="dropdown">
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <img alt="" class="myimg" src="images/IMG20190719055907.jpg">
+                                <span class="myname">John Xim</span>
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu extended logout">
+                                <li><a href="#"><i class=" fa fa-suitcase"></i>Profile</a></li>
+                                <li class="btn_logout"><a href="#"><i class="fa fa-key"></i> Log Out</a></li>
+                            </ul>
+                        </li>
+                        <!-- user login dropdown end -->
+                    </ul>
+                </div>
+
+            </div>
+
+        </header>
+        <!--header end-->
+
+        <!--sidebar start-->
+        <!--main content start-->
+        <section id="main-content">
+            <section class="wrapper">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!--breadcrumbs start -->
+                        <ul class="breadcrumb titlebreadcrumb">
+                            <li><a href="#"><i class="fa fa-home"></i>Danh Mục</a></li>
+                            <li class="active">Sản Phẩm</li>
+                        </ul>
+                        <!--breadcrumbs end -->
+                    </div>
+                </div>
+
+                <!--Thông tin sản phẩm-->
+                <div class="form_thongtintheloai">
+                    <h3 align="center">QUẢN LÝ THỂ LOẠI</h3>&nbsp;
+                    <!--Mở form-->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="col-sm-5" align="right">
+                                <h5>Mã thể loại:</h5>
+                            </div>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control txtmatl">
+                            </div>
+                        </div>&nbsp;
+
+                        <div class="col-sm-12">
+                            <div class="col-sm-5" align="right">
+                                <h5>Tên thể loại:</h5>
+                            </div>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control txttentl">
+                            </div>
+                        </div><br>&nbsp;
+
+                        <div class="col-sm-12" align="center">
+                            <button type="button" class="btn btn-success btn_themtl">Thêm</button>&nbsp;
+                            <button type="button" class="btn btn-success btn_luutl">Lưu</button>&nbsp;
+                            <button type="button" class="btn btn-success btn_xoatl">Xóa</button>
+                            <button type="button" class="btn btn-success btn_timkiemtl">Tìm kiếm</button>&nbsp;
+                            <button type="button" class="btn btn-success btn_lamlai">Làm lại</button>&nbsp;
+                        </div>
+                    </div>&nbsp;
+
+                    <!--Đóng form-->
+
+                    <!--Bắt đầu bảng dữ liệu-->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <section class="panel">
+                                <div class="panel-body">
+                                    <!--bắt đầu bảng-->
+                                    <table class="table  table-hover general-table">
+                                        <thead>
+                                            <tr>
+                                                <th>STT</th>
+                                                <th class="hidden-phone">Mã thể loại</th>
+                                                <th>Tên thể loại</th>
+                                                <th>Xóa</th>
+                                                <th>Sửa</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="tttl">
+
+                                        </tbody>
+                                    </table>
+                                    <!--kết thúc bảng-->
+
+                                    <div class="row" align="center">
+                                        <div class="btn-group pagination">
+                                            <!-- Thanh điều hướng số -->
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <!--kết thúc bảng dữ liệu-->
+                </div>
+                <!--Kết thúc Thông tin sản phẩm-->
+            </section>
+
+        </section>
+    </section>
+    <!--main content end-->
+
+
+    <!--footer start-->
+    <footer class="footer-section">
+        <div class="text-center">
+            2020 &copy; Admin QLBH by Đặng Văn Xim
+            <a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
+        </div>
+    </footer>
+    <!--footer end-->
+    </section>
+
+    <!--Bộ script dưới này vẫn đang trong body-->
+
+    <!-- Placed js at the end of the document so the pages load faster -->
+    <!--Core js-->
+    <script src="js/jquery.js"></script>
+    <script src="bs3/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/hover-dropdown.js"></script>
+    <script src="js/jQuery-slimScroll-1.3.0/jquery.slimscroll.js"></script>
+    <script src="js/jquery.nicescroll.js"></script>
+
+    <!--Easy Pie Chart-->
+    <script src="js/easypiechart/jquery.easypiechart.js"></script>
+    <!--Sparkline Chart-->
+    <script src="js/sparkline/jquery.sparkline.js"></script>
+
+    <!--common script init for all pages-->
+    <script src="js/scripts.js"></script>
+
+    <!--for me-->
+    <script type="text/javascript" src="js1/main.js"></script>
+    <script type="text/javascript" src="js/bootbox.min.js"></script>
+    <script type="text/javascript" src="js1/Admin_frm_theloai.js"></script>
+    <script type="text/javascript" src="js1/login_call.js"></script>
+
+</body>
+
+</html>
